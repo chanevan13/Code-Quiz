@@ -1,0 +1,39 @@
+body{
+
+}
+
+h1{
+    text-align: center;
+    color: rgb(132, 0, 255);
+    font-size: 100px;
+}
+
+h2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.startBtn button{
+    color: rgb(132, 0, 255);
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.highscoreBtn button{
+    color: rgb(132, 0, 255);
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    border: none;
+    transform: translate(-50%,-50%);
+    border: none;
+    cursor: pointer;
+}
