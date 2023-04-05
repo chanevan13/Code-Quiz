@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-    <title>JavaScript Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <title>Javascript Quiz</title>
 </head>
 <body>
-    <!--link javascript-->
-    <script src="./assets/js/script.js"></script>
-    <!--title of quiz-->
-        <h1>JavaScript Quiz</h1>
-    <div class="quizBox">
-        <h2>[insert question here]</h2>
-    </div>
-    <!-- Create button for start quiz and highscore-->
-    <div class="startBtn"><button>Start Quiz</button></div> 
-    <div class="highscoreBtn"><button>View highscores</button></div>
-    
-
+  <div class="min-vh-100 d-flex align-items-center bg-dark">
+    <section class="w-100 row justify-content-center">
+      <div class="col-10 col-md-6 col-lg-5">
+        <h1 class="display-3 text-center text-warning">Javascript Quiz!</h1>
+        <form class="bg-white my-4 p-4 rounded">
+         <h3 class="blockquote text-center">You have 4 multiple choice questions and 30 seconds to answer each. Good Luck!</h3>
+         <div id="answer-buttons" class="btn-grid d-grid gap-3">
+            <button class="Btn btn-warning rounded-pill d-flex justify-content-center align-items-center" id="answer1" style="height: 80px; font-size: 24px;"></button>
+            <button class="Btn btn-warning rounded-pill d-flex justify-content-center align-items-center" id="answer2" style="height: 80px; font-size: 24px;"></button>
+            <button class="Btn btn-warning rounded-pill d-flex justify-content-center align-items-center" id="answer3" style="height: 80px; font-size: 24px;"></button>
+            <button class="Btn btn-warning rounded-pill d-flex justify-content-center align-items-center" id="answer4" style="height: 80px; font-size: 24px;"></button>
+          </div>
+          <h1 id="Question" class="text-center"></h1>
+          <div class="text-center" id="time"></div>
+          <h2>Wins: <span class="win text-center">0</span></h2>
+          <h2>Losses: <span class="lose text-center">0</span></h2>
+        </form>
+        <button class="btn-block btn-warning w-100 rounded" id="startBtn">Start</button>
+        <button class="btn-block btn-dark w-100 rounded" id="highBtn">View High Scores</button>
+      </div>
+    </section>
+  </div>
+  
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
